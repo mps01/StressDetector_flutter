@@ -22,7 +22,7 @@ ScreenShots:
     
   - Image Processed Stressed:
   
-    ![alt text](https://raw.githubusercontent.com/mps01/stress_detect/master/Image Processed Stressed.png)
+    ![alt text](https://raw.githubusercontent.com/mps01/stress_detect/master/Image%20Processed%20Stressed.png)
 
 ## Getting Started
 
