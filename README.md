@@ -21,6 +21,7 @@ ScreenShots:
     ![alt text](https://raw.githubusercontent.com/mps01/stress_detect/master/Image%20Processed%20Happy.png)
     
   - Image Processed Stressed:
+  
     ![alt text](https://raw.githubusercontent.com/mps01/stress_detect/master/Image Processed Stressed.png)
 
 ## Getting Started
