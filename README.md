@@ -8,7 +8,7 @@ This image processing TFlite model was created easily using Teachable Machine.
 
 - [Click Here To Know More](https://teachablemachine.withgoogle.com/train)
 
-This app consists of simple material-UI which make it beautiful.
+This app consists of simple material-UI which makes it beautiful.
 
 ## Getting Started
 
