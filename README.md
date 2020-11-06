@@ -2,6 +2,14 @@
 
 A new Flutter project.
 
+This Cross Platform application uses tflite model to predict whether in an image a person is in stress or not.
+
+This image processing TFlite model was created easily using Teachable Machine. 
+
+- [Click Here To Know More](https://teachablemachine.withgoogle.com/train)
+
+This app consists of simple material-UI which make it beautiful.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
