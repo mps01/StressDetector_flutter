@@ -10,6 +10,19 @@ This image processing TFlite model was created easily using Teachable Machine.
 
 This app consists of simple material-UI which makes it beautiful.
 
+ScreenShots:
+
+  - Homepage:
+    
+    ![alt text](https://raw.githubusercontent.com/mps01/stress_detect/master/Homepage.png)
+    
+  - Image Processed Happy:
+  
+    ![alt text](https://raw.githubusercontent.com/mps01/stress_detect/master/Image%20Processed%20Happy.png)
+    
+  - Image Processed Stressed:
+    ![alt text](https://raw.githubusercontent.com/mps01/stress_detect/master/Image Processed Stressed.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
