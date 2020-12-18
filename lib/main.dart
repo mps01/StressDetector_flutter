@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 //import 'tensorflow.dart';
+import 'package:stress_detect/calm.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
+import 'package:stress_detect/Widgets/widget.dart';
+
 import 'package:tflite/tflite.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MyApp());
 
@@ -68,7 +70,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   pickImage() async {
-    var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+    var image = await ImagePicker.pickImage(
+      source: ImageSource.gallery,
+    );
+
     if (image == null) return null;
     setState(() {
       _loading = true;
@@ -80,17 +85,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(244, 243, 243, 1),
+      drawer: NavDrawer(),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black87),
         backgroundColor: Colors.white,
         brightness: Brightness.light,
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(
-            Icons.menu,
-            color: Colors.black87,
-          ),
-          onPressed: () {},
-        ),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -166,28 +166,34 @@ class _HomePageState extends State<HomePage> {
                             fit: BoxFit.cover,
                             image: AssetImage('assets/images/three.jpg')),
                       ),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          gradient: LinearGradient(
-                              begin: Alignment.bottomRight,
-                              stops: [
-                                0.3,
-                                0.9
-                              ],
-                              colors: [
-                                Colors.black.withOpacity(.8),
-                                Colors.black.withOpacity(.2)
-                              ]),
-                        ),
-                        child: Align(
-                          alignment: Alignment.bottomLeft,
-                          child: Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Text(
-                              'Best Ways to Calm',
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 20),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Home()));
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            gradient: LinearGradient(
+                                begin: Alignment.bottomRight,
+                                stops: [
+                                  0.3,
+                                  0.9
+                                ],
+                                colors: [
+                                  Colors.black.withOpacity(.8),
+                                  Colors.black.withOpacity(.2)
+                                ]),
+                          ),
+                          child: Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Padding(
+                              padding: const EdgeInsets.all(15.0),
+                              child: Text(
+                                'Best Ways to Calm',
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
+                              ),
                             ),
                           ),
                         ),
@@ -242,30 +248,6 @@ class _HomePageState extends State<HomePage> {
               )
             ],
           ),
-        ),
-      ),
-    );
-  }
-
-  Widget promoCard(image) {
-    return AspectRatio(
-      aspectRatio: 2.62 / 3,
-      child: Container(
-        margin: EdgeInsets.only(right: 15.0),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          image: DecorationImage(fit: BoxFit.cover, image: AssetImage(image)),
-        ),
-        child: Container(
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              gradient: LinearGradient(begin: Alignment.bottomRight, stops: [
-                0.1,
-                0.9
-              ], colors: [
-                Colors.black.withOpacity(.8),
-                Colors.black.withOpacity(.1)
-              ])),
         ),
       ),
     );

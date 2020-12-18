@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "283343557483",
+    "firebase_url": "https://stress-4ec71.firebaseio.com",
+    "project_id": "stress-4ec71",
+    "storage_bucket": "stress-4ec71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283343557483:android:4306c8c8625bfac0beb22e",
+        "android_client_info": {
+          "package_name": "com.example.stress_detect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283343557483-v3550kgvtr8utv9v7h47p8r83oro0fgc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ZdRJA3FuxjV_7SwWXqk5uc-tQJLMYcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283343557483-v3550kgvtr8utv9v7h47p8r83oro0fgc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
